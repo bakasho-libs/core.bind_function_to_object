@@ -1,0 +1,34 @@
+{
+  "name": "core.bind_function_to_object",
+  "version": "0.0.1",
+  "description": "Bind a function to a context object",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakasho-libs/core.bind_function_to_object.git"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "test-node": "./node_modules/.bin/tape test/bindFunctionToObject-test.js | ./node_modules/.bin/tap-spec",
+    "test-node-raw": "./node_modules/.bin/tape test/bindFunctionToObject-test.js",
+    "test-browser-local": "zuul --local 8080 --ui tape -- ./test/bindFunctionToObject-test.js",
+    "test-browser-travis": "zuul -- ./test/bindFunctionToObject-test.js"
+  },
+  "author": "Bakasho Team",
+  "license": "MIT",
+  "keywords": [
+    "bindFunctionToObject",
+    "bind_function_to_object"
+  ],
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-jsbeautifier": "^0.2.7",
+    "grunt-contrib-jshint": "^0.11.2",
+    "tap-spec": "^4.0.0",
+    "tape": "^4.0.0",
+    "zuul": "^3.0.0"
+  },
+  "dependencies": {
+    "core.is_number": "git://github.com/bakasho-libs/core.is_number.git"
+  }
+}
